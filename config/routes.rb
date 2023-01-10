@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'users/show'
   get 'static_pages/home'
   get "/" => "static_pages#home"
   get "/log_out", to: "static_pages#logOut"
